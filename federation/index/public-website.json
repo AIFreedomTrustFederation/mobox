@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "0.1.0",
+  "registryType": "public-website-registry",
+  "description": "First-pass requirements for what the Federation-level website should eventually expose from the knowledge indexes.",
+  "primaryWebsiteRepository": "AIFreedomTrustFederation/www.aifreedomtrust.com",
+  "publicWebsiteRole": "Curated public-safe explanation surface for the Federation canon, repositories, books, whitepapers, onboarding, and local action paths.",
+  "publicIndexesToExpose": [
+    "public-books",
+    "public-scrolls",
+    "public-whitepapers",
+    "public-architecture-references",
+    "public-repository-map",
+    "public-onboarding-paths",
+    "public-bounty-types",
+    "public-claim-boundaries"
+  ],
+  "neverExposeByDefault": [
+    "private-drive-files",
+    "private-identity-data",
+    "financial-records",
+    "legal-documents",
+    "unpublished-manuscripts",
+    "non-public-personal-context",
+    "unreviewed-claims"
+  ],
+  "publicationPipeline": [
+    "source-recorded",
+    "source-classified",
+    "claim-boundaries-added",
+    "human-review-completed",
+    "validator-review-completed-if-needed",
+    "public-summary-approved",
+    "website-index-updated"
+  ],
+  "nextStep": "Create a public-safe generated index file that the website can consume without reading private or unreviewed sources directly."
+}
