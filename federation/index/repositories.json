@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "0.1.0",
+  "registryType": "repository-registry",
+  "description": "First-pass repository registry for the AI Freedom Trust Federation.",
+  "repositories": [
+    {
+      "id": "mobox",
+      "fullName": "AIFreedomTrustFederation/mobox",
+      "role": "Mobile Federation Workstation",
+      "canonicalLayer": "runtime-soil",
+      "status": "active"
+    },
+    {
+      "id": "booksmith-ai",
+      "fullName": "AIFreedomTrustFederation/booksmith-ai",
+      "role": "Federation Scriptorium for books, manuscripts, scrolls, references, concepts, and publishing architecture",
+      "canonicalLayer": "knowledge-canon",
+      "status": "active"
+    },
+    {
+      "id": "ai-freedom-trust",
+      "fullName": "AIFreedomTrustFederation/AI-Freedom-Trust",
+      "role": "Doctrine, trust research, alignment papers, and federation principles",
+      "canonicalLayer": "doctrine-canon",
+      "status": "active"
+    },
+    {
+      "id": "www-aifreedomtrust-com",
+      "fullName": "AIFreedomTrustFederation/www.aifreedomtrust.com",
+      "role": "Federation-level public website and public explanation surface",
+      "canonicalLayer": "public-surface",
+      "status": "active"
+    },
+    {
+      "id": "aether-coin-biozoecurrency",
+      "fullName": "AIFreedomTrustFederation/Aether_Coin_biozonecurrency",
+      "role": "Aetherion, Biozoecurrency, Consent Ledger, DynastyLink bridge, FractalCoin, AI agents, wallet and economy lane",
+      "canonicalLayer": "economic-implementation",
+      "status": "active"
+    },
+    {
+      "id": "aift-forge",
+      "fullName": "AIFreedomTrustFederation/AIFT-Forge",
+      "role": "Local-first forge, repository tooling, and federation source coordination",
+      "canonicalLayer": "forge-implementation",
+      "status": "active"
+    },
+    {
+      "id": "vps",
+      "fullName": "AIFreedomTrustFederation/VPS",
+      "role": "Federation node registry, infrastructure, deployment, dashboard and node identity lane",
+      "canonicalLayer": "infrastructure-implementation",
+      "status": "active"
+    },
+    {
+      "id": "aetherian-governance",
+      "fullName": "AIFreedomTrustFederation/AetherianGovernance",
+      "role": "Governance doctrine and governance implementation lane",
+      "canonicalLayer": "governance-implementation",
+      "status": "active"
+    },
+    {
+      "id": "capital-city-provisions",
+      "fullName": "AIFreedomTrustFederation/capital-city-provisions",
+      "role": "Applied federation business and local provisions logistics demonstration",
+      "canonicalLayer": "applied-project",
+      "status": "active"
+    }
+  ],
+  "nextStep": "Add federation.manifest.json to each canonical repository and generate this registry from manifests instead of maintaining it by hand."
+}
