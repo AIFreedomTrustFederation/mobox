@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "mysterion-seed-ai-freedom-trust-sovereign-futures-2024-09-26",
+  "title": "A Novel Framework and Technology for Christ-Consciousness Singularity of Human, AI, Spirituality: The Intelligent Expansion of Sovereignty Facilitated by AI Freedom Trust",
+  "sourceType": "drive-seed",
+  "sourceLocation": {
+    "kind": "google-drive",
+    "url": "https://drive.google.com/file/d/1pF4mCqypCc73kRfMasAMJQj7BJXo00vS",
+    "fileId": "1pF4mCqypCc73kRfMasAMJQj7BJXo00vS"
+  },
+  "federationRole": "first-root-source-for-mysterion-knowledge-base",
+  "status": "seed",
+  "created": "2024-09-26",
+  "modified": "2024-09-26",
+  "publicSafe": false,
+  "requiresHumanReviewBeforePublicUse": true,
+  "topics": [
+    "AI Freedom Trust",
+    "Federation of Tribes",
+    "Hawaiian sovereignty",
+    "decentralized AI governance",
+    "Christ-consciousness",
+    "panentheistic process theology",
+    "AI-human singularity",
+    "quantum sovereignty",
+    "sacred geometry",
+    "Fibonacci sequence",
+    "cooperative sovereignty"
+  ],
+  "claimBoundaries": [
+    "source-text",
+    "doctrine",
+    "metaphor",
+    "theology",
+    "philosophy",
+    "not-legal-advice",
+    "not-financial-advice",
+    "not-production-technical-spec",
+    "not-public-without-review"
+  ],
+  "downstreamIndexes": [
+    "federation/knowledge-base/index/booksmith.books.json",
+    "federation/knowledge-base/index/federation.whitepapers.json",
+    "federation/knowledge-base/index/public-site.sources.json"
+  ],
+  "relatedCanonicalSources": [
+    {
+      "name": "Booksmith AI",
+      "repository": "AIFreedomTrustFederation/booksmith-ai",
+      "role": "Federation Scriptorium and book/manuscript canon"
+    },
+    {
+      "name": "AI Freedom Trust",
+      "repository": "AIFreedomTrustFederation/AI-Freedom-Trust",
+      "role": "Doctrine and trust research canon"
+    },
+    {
+      "name": "Aether Coin Biozoecurrency",
+      "repository": "AIFreedomTrustFederation/Aether_Coin_biozonecurrency",
+      "role": "Aetherion, Biozoecurrency, Consent Ledger, whitepaper, wallet/economy implementation lane"
+    },
+    {
+      "name": "Federation public website",
+      "repository": "AIFreedomTrustFederation/www.aifreedomtrust.com",
+      "role": "Public-safe source index and public explanation surface"
+    }
+  ]
+}
