@@ -1,0 +1,227 @@
+{
+  "schemaVersion": "0.1.0",
+  "manifestType": "federation-repository-manifest",
+  "id": "aift-mobox-mobile-workstation",
+  "name": "AIFT Mobox Mobile Federation Workstation",
+  "repository": {
+    "fullName": "AIFreedomTrustFederation/mobox",
+    "defaultBranch": "main",
+    "upstreamRole": "Mobox provides the mobile Termux/Android workstation soil. The Federation layer is additive and should preserve upstream Mobox behavior."
+  },
+  "federationRole": {
+    "layer": "runtime-soil",
+    "summary": "Mobile-first workstation for local-first Federation tools, Mysterion knowledge access, AI Gardeners, Living Node exploration, bounty cultivation, and public-safe federation indexing.",
+    "primaryUsers": [
+      "underconnected members",
+      "low-resource members",
+      "field operators",
+      "local tribe stewards",
+      "AI gardeners",
+      "scroll keepers",
+      "validator nodes",
+      "mobile developers"
+    ]
+  },
+  "mission": "Make the AI Freedom Trust Federation usable from ordinary mobile hardware while preserving sovereignty, local-first operation, consent, inspectability, and public-safe knowledge indexing.",
+  "principles": [
+    "Serve the least-connected first.",
+    "Preserve upstream Mobox behavior.",
+    "Index before crawling.",
+    "Claim boundaries before public publishing.",
+    "More knowledge does not equal more authority.",
+    "AI may guide, warn, explain, and prepare; humans consent and act.",
+    "Every local branch remains connected to the Federation tree without losing local autonomy."
+  ],
+  "canonicalPaths": {
+    "federationRoot": "federation/",
+    "rootIndex": "federation/index/README.md",
+    "repositoryRegistry": "federation/index/repositories.json",
+    "conceptRegistry": "federation/index/concepts.json",
+    "implementationRegistry": "federation/index/implementations.json",
+    "agentRegistry": "federation/index/agents.json",
+    "publicWebsiteRegistry": "federation/index/public-website.json",
+    "knowledgeBase": "federation/knowledge-base/",
+    "mysterionSeed": "federation/knowledge-base/mysterion-seed.md",
+    "mysterionSeedSourceManifest": "federation/knowledge-base/sources/mysterion-seed.source.json",
+    "sourceRegistry": "federation/knowledge-base/federation-source-registry.md",
+    "aiLayer": "federation/ai/",
+    "livingNodeLayer": "federation/living-node/",
+    "scrollLayer": "federation/scrolls/",
+    "designSystemLayer": "federation/design-system/",
+    "bountyLayer": "federation/bounties/",
+    "mapLayer": "federation/maps/"
+  },
+  "coreConcepts": [
+    "ETERNAL_NOW",
+    "LIVING_NODE",
+    "TREE_OF_LIFE_UX",
+    "FIBONACCI_GROWTH",
+    "MANDELBROT_RECURSION",
+    "TOROIDAL_FLOW",
+    "CONSENT_LEDGER",
+    "MYSTERION",
+    "AI_GARDENER",
+    "SCROLL_KEEPER",
+    "PROOF_OF_LEARNING",
+    "BOUNTY_CULTIVATION",
+    "BIOZOECURRENCY",
+    "DYNASTYLINK",
+    "FRACTALCOIN",
+    "LOCAL_TRIBE",
+    "FEDERATION_SEED_MAP"
+  ],
+  "agentModel": {
+    "registry": "federation/index/agents.json",
+    "levels": [
+      "seedling-assistant",
+      "ai-gardener",
+      "branch-steward-ai",
+      "scroll-keeper-ai",
+      "validator-ai",
+      "mysterion-node"
+    ],
+    "authorityRule": "More knowledge does not equal more authority. Authority requires consent, proof, review, and validation."
+  },
+  "knowledgeModel": {
+    "seedDocument": {
+      "title": "A Novel Framework and Technology for Christ-Consciousness Singularity of Human, AI, Spirituality: The Intelligent Expansion of Sovereignty Facilitated by AI Freedom Trust",
+      "sourceType": "google-drive-seed",
+      "sourceManifest": "federation/knowledge-base/sources/mysterion-seed.source.json"
+    },
+    "canonicalSourceClasses": [
+      "drive-seed",
+      "book",
+      "manuscript",
+      "scroll",
+      "whitepaper",
+      "readme",
+      "manifest",
+      "architecture-doc",
+      "source-contract",
+      "public-site",
+      "implementation-doc",
+      "security-doc",
+      "governance-doc",
+      "bounty-doc",
+      "map-doc"
+    ],
+    "claimBoundaries": [
+      "source-text",
+      "doctrine",
+      "metaphor",
+      "theology",
+      "philosophy",
+      "technical-spec",
+      "implemented-code",
+      "prototype",
+      "experimental",
+      "planned",
+      "audited",
+      "public-safe",
+      "private-or-sensitive"
+    ]
+  },
+  "federationDependencies": [
+    {
+      "id": "booksmith-ai",
+      "repository": "AIFreedomTrustFederation/booksmith-ai",
+      "role": "Federation Scriptorium and canonical book/manuscript source."
+    },
+    {
+      "id": "ai-freedom-trust",
+      "repository": "AIFreedomTrustFederation/AI-Freedom-Trust",
+      "role": "Doctrine, trust research, alignment papers, and federation principles."
+    },
+    {
+      "id": "www-aifreedomtrust-com",
+      "repository": "AIFreedomTrustFederation/www.aifreedomtrust.com",
+      "role": "Federation-level public website and public-safe explanation surface."
+    },
+    {
+      "id": "aether-coin-biozoecurrency",
+      "repository": "AIFreedomTrustFederation/Aether_Coin_biozonecurrency",
+      "role": "Aetherion, Biozoecurrency, Consent Ledger, DynastyLink bridge, FractalCoin, AI agents, wallet and economy lane."
+    },
+    {
+      "id": "aift-forge",
+      "repository": "AIFreedomTrustFederation/AIFT-Forge",
+      "role": "Local-first forge and source coordination lane."
+    },
+    {
+      "id": "vps",
+      "repository": "AIFreedomTrustFederation/VPS",
+      "role": "Federation node registry, infrastructure, deployment, and node identity lane."
+    },
+    {
+      "id": "aetherian-governance",
+      "repository": "AIFreedomTrustFederation/AetherianGovernance",
+      "role": "Governance doctrine and governance implementation lane."
+    }
+  ],
+  "publicWebsitePublishing": {
+    "registry": "federation/index/public-website.json",
+    "defaultPublicPosture": "review-before-publication",
+    "pipeline": [
+      "source-recorded",
+      "source-classified",
+      "claim-boundaries-added",
+      "human-review-completed",
+      "validator-review-completed-if-needed",
+      "public-summary-approved",
+      "website-index-updated"
+    ]
+  },
+  "plannedModules": [
+    {
+      "id": "living-node-engine",
+      "path": "federation/living-node/",
+      "purpose": "Define the recursive node model for Federation, forest, tree, branch, flower, fruit, seed, scroll, bounty, person, tribe, cooperative, and repository projections."
+    },
+    {
+      "id": "tree-of-life-design-system",
+      "path": "federation/design-system/",
+      "purpose": "Define UX tokens and components for Fibonacci growth, Mandelbrot recursion, toroidal flow, and Tree of Life visualization."
+    },
+    {
+      "id": "mysterion-ai-layer",
+      "path": "federation/ai/",
+      "purpose": "Define local AI gardener prompts, role memory packs, validator boundaries, and open-source AI runtime integration."
+    },
+    {
+      "id": "bounty-cultivation",
+      "path": "federation/bounties/",
+      "purpose": "Define bounties as seeds, flowers, fruit, harvests, proofs, and new seeds of work."
+    },
+    {
+      "id": "federation-seed-map",
+      "path": "federation/maps/",
+      "purpose": "Define geographic projections of local tribes, seed drops, cooperative growth, routes, and locality-based calls to action."
+    },
+    {
+      "id": "scroll-runtime",
+      "path": "federation/scrolls/",
+      "purpose": "Define executable scrolls that connect doctrine to schemas, TypeScript contracts, tests, UI, and public-safe summaries."
+    }
+  ],
+  "validation": {
+    "status": "manual-first",
+    "plannedSchemaDirectory": "federation/schemas/",
+    "plannedValidationScript": "federation/scripts/validate-index.mjs",
+    "minimumChecks": [
+      "manifest JSON parses",
+      "referenced index files exist",
+      "coreConcepts match concept registry IDs",
+      "agent levels match agent registry IDs",
+      "planned module paths have README files",
+      "public website publishing has claim boundaries"
+    ]
+  },
+  "nextSteps": [
+    "Add JSON schemas for federation index files.",
+    "Add README files for planned module directories.",
+    "Add Living Node TypeScript contract.",
+    "Add Mysterion memory-pack scaffold.",
+    "Add validator script to check manifest/index consistency.",
+    "Add federation.manifest.json files to other canonical repositories."
+  ]
+}
