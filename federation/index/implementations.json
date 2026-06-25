@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "0.1.0",
+  "registryType": "implementation-registry",
+  "description": "First-pass map from Federation concepts to known or planned implementation locations.",
+  "implementations": [
+    {
+      "conceptId": "MYSTERION",
+      "status": "seeded",
+      "primaryLocation": "federation/knowledge-base/mysterion-seed.md",
+      "supportingLocations": [
+        "federation/knowledge-base/federation-source-registry.md",
+        "federation/knowledge-base/sources/mysterion-seed.source.json"
+      ]
+    },
+    {
+      "conceptId": "LIVING_NODE",
+      "status": "planned",
+      "primaryLocation": "federation/living-node/",
+      "supportingLocations": ["federation/index/concepts.json"]
+    },
+    {
+      "conceptId": "TREE_OF_LIFE_UX",
+      "status": "planned",
+      "primaryLocation": "federation/design-system/",
+      "supportingLocations": ["federation/index/concepts.json"]
+    },
+    {
+      "conceptId": "CONSENT_LEDGER",
+      "status": "external-source",
+      "primaryLocation": "AIFreedomTrustFederation/Aether_Coin_biozonecurrency/docs/consent-ledger.md",
+      "supportingLocations": ["AIFreedomTrustFederation/Aether_Coin_biozonecurrency/shared/types"]
+    },
+    {
+      "conceptId": "BIOZOECURRENCY",
+      "status": "external-source",
+      "primaryLocation": "AIFreedomTrustFederation/Aether_Coin_biozonecurrency/docs/biozoecurrency-token-taxonomy.md",
+      "supportingLocations": ["AIFreedomTrustFederation/Aether_Coin_biozonecurrency/shared/types/biozoecurrency-token.ts"]
+    },
+    {
+      "conceptId": "FRACTALCOIN",
+      "status": "external-source",
+      "primaryLocation": "AIFreedomTrustFederation/Aether_Coin_biozonecurrency/updated_whitepaper/FractalCoin_Toroidal_Economics_Whitepaper.md",
+      "supportingLocations": ["AIFreedomTrustFederation/Aether_Coin_biozonecurrency/client/src/assets/FractalCoin_Toroidal_Economics_Whitepaper.md"]
+    },
+    {
+      "conceptId": "AI_GARDENER",
+      "status": "planned",
+      "primaryLocation": "federation/ai/",
+      "supportingLocations": ["federation/index/agents.json"]
+    },
+    {
+      "conceptId": "FEDERATION_SEED_MAP",
+      "status": "planned",
+      "primaryLocation": "federation/maps/",
+      "supportingLocations": ["federation/index/concepts.json"]
+    },
+    {
+      "conceptId": "BOUNTY_CULTIVATION",
+      "status": "planned",
+      "primaryLocation": "federation/bounties/",
+      "supportingLocations": ["federation/index/concepts.json"]
+    }
+  ],
+  "nextStep": "Convert planned locations into lightweight README files and then into TypeScript contracts."
+}
