@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "0.1.0",
+  "registryType": "concept-registry",
+  "description": "Canonical first-pass concept IDs for the Federation knowledge graph.",
+  "concepts": [
+    {"id": "ETERNAL_NOW", "label": "Eternal Now", "kind": "principle", "summary": "Root principle of recursive becoming and living continuity."},
+    {"id": "LIVING_NODE", "label": "Living Node", "kind": "architecture", "summary": "Recursive base object for persons, trees, scrolls, repositories, bounties, tribes, cooperatives, and federation entities."},
+    {"id": "TREE_OF_LIFE_UX", "label": "Tree of Life UX", "kind": "ux", "summary": "Visual interface where members begin as buds or flowers, mature into fruit, release seeds, and grow trees within local forests."},
+    {"id": "FIBONACCI_GROWTH", "label": "Fibonacci Growth", "kind": "pattern", "summary": "Growth rhythm for layers, spacing, progression, learning, release cycles, and visual emergence."},
+    {"id": "MANDELBROT_RECURSION", "label": "Mandelbrot Recursion", "kind": "pattern", "summary": "Self-similar structure where each branch can reveal another tree-like projection of the whole."},
+    {"id": "TOROIDAL_FLOW", "label": "Toroidal Flow", "kind": "pattern", "summary": "Circular flow of value, knowledge, consent, stewardship, and regeneration."},
+    {"id": "CONSENT_LEDGER", "label": "Consent Ledger", "kind": "protocol", "summary": "Record of human consent, AI explanation, risk, action boundaries, and auditable decision trails."},
+    {"id": "MYSTERION", "label": "Mysterion", "kind": "ai-system", "summary": "Federation-aware AI knowledge system and validator council architecture."},
+    {"id": "AI_GARDENER", "label": "AI Gardener", "kind": "ai-role", "summary": "Bounded local AI role that helps members find branches, learning paths, bounties, and next actions."},
+    {"id": "SCROLL_KEEPER", "label": "Scroll Keeper", "kind": "role", "summary": "Human or AI-assisted role that preserves, extends, validates, and implements Federation canon."},
+    {"id": "PROOF_OF_LEARNING", "label": "Proof of Learning", "kind": "proof", "summary": "Cultivation proof showing learning, comprehension, contribution, or validated skill progression."},
+    {"id": "BOUNTY_CULTIVATION", "label": "Bounty Cultivation", "kind": "economy", "summary": "Bounties represented as seeds, flowers, fruit, harvests, and new seeds of work."},
+    {"id": "BIOZOECURRENCY", "label": "Biozoecurrency", "kind": "economy", "summary": "Living accounting of regenerative contribution and stewardship value."},
+    {"id": "DYNASTYLINK", "label": "DynastyLink", "kind": "identity", "summary": "Trust identity, lineage, and federated local profile path."},
+    {"id": "FRACTALCOIN", "label": "FractalCoin", "kind": "economy", "summary": "Toroidal economics and fractal tokenomics framework from Aetherion whitepaper material."},
+    {"id": "LOCAL_TRIBE", "label": "Local Tribe", "kind": "community", "summary": "Local community, chapter, circle, cooperative, or branch where a member is rooted geographically and relationally."},
+    {"id": "FEDERATION_SEED_MAP", "label": "Federation Seed Map", "kind": "map", "summary": "Geographic projection of where trees, tribes, seeds, bounties, and local actions are growing."}
+  ]
+}
