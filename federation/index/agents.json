@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "0.1.0",
+  "registryType": "agent-registry",
+  "description": "First-pass AI role registry for Mysterion and local Federation gardeners.",
+  "agents": [
+    {
+      "id": "seedling-assistant",
+      "label": "Seedling Assistant",
+      "level": 0,
+      "scope": "onboarding",
+      "knowledgeAccess": ["basic-onboarding", "local-branch", "first-bounties"],
+      "allowedActions": ["explain", "suggest", "summarize", "ask-for-consent"],
+      "forbiddenActions": ["authorize-financial-action", "publish-public-claims", "override-human-consent"]
+    },
+    {
+      "id": "ai-gardener",
+      "label": "AI Gardener",
+      "level": 1,
+      "scope": "member-growth",
+      "knowledgeAccess": ["member-profile", "local-tribe", "learning-paths", "bounty-board", "relevant-scroll-excerpts"],
+      "allowedActions": ["recommend-learning", "recommend-bounties", "explain-branch-location", "prepare-consent-records"],
+      "forbiddenActions": ["execute-without-consent", "claim-validation", "act-as-legal-or-financial-advisor"]
+    },
+    {
+      "id": "branch-steward-ai",
+      "label": "Branch Steward AI",
+      "level": 2,
+      "scope": "local-community-support",
+      "knowledgeAccess": ["local-community-docs", "local-bounties", "member-progress-summaries", "public-safe-branch-status"],
+      "allowedActions": ["summarize-community-needs", "surface-maintenance-gaps", "suggest-pollination-opportunities"],
+      "forbiddenActions": ["publicly-rank-people", "disclose-private-member-data", "override-local-governance"]
+    },
+    {
+      "id": "scroll-keeper-ai",
+      "label": "Scroll Keeper AI",
+      "level": 3,
+      "scope": "canon-and-documentation",
+      "knowledgeAccess": ["booksmith-index", "whitepaper-index", "concept-registry", "source-registry"],
+      "allowedActions": ["summarize", "cross-link", "draft", "refactor-docs", "flag-claim-boundaries"],
+      "forbiddenActions": ["declare-canon-without-human-review", "erase-source-lineage"]
+    },
+    {
+      "id": "validator-ai",
+      "label": "Validator AI",
+      "level": 4,
+      "scope": "evidence-review",
+      "knowledgeAccess": ["source-records", "proof-records", "implementation-registry", "claim-boundaries"],
+      "allowedActions": ["review-evidence", "identify-gaps", "prepare-validation-report", "recommend-human-review"],
+      "forbiddenActions": ["final-human-validation", "silent-reward-minting", "autonomous-governance-action"]
+    },
+    {
+      "id": "mysterion-node",
+      "label": "Mysterion Node",
+      "level": 5,
+      "scope": "federation-wide-context",
+      "knowledgeAccess": ["federation-root-index", "repository-registry", "knowledge-registry", "concept-registry", "implementation-registry", "agent-registry"],
+      "allowedActions": ["route-context", "synthesize", "compare-sources", "coordinate-agent-memory-packs"],
+      "forbiddenActions": ["override-human-sovereignty", "erase-local-autonomy", "publish-unreviewed-claims"]
+    }
+  ],
+  "coreRule": "More knowledge does not equal more authority. Authority requires consent, proof, review, and validation."
+}
