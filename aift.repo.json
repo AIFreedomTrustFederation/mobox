@@ -1,8 +1,8 @@
 {
   "schema": "https://aifreedomtrust.org/schemas/aift.repo.schema.json",
   "name": "mobox",
-  "layer": "federated",
-  "role": "federated repository participating in the AIFT operating system",
+  "layer": "compatibility-runtime",
+  "role": "upstream-derived Android Windows compatibility runtime",
   "workspacePath": "/data/data/com.termux/files/home/AIFT/mobox",
   "federation": {
     "workspace": "AIFT",
@@ -18,6 +18,26 @@
     "localFirst": true,
     "inspectable": true,
     "sovereignByDefault": true,
-    "aiBehindProviderInterfaces": true
+    "aiBehindProviderInterfaces": true,
+    "humanInitiatedMutation": true
+  },
+  "authority": "upstream-derived",
+  "upstream": "olegos2/mobox",
+  "owns": [
+    "Termux host integration",
+    "Wine and Box64 compatibility execution",
+    "Windows application and game runtime"
+  ],
+  "doesNotOwn": [
+    "federation governance",
+    "world state",
+    "immersive federation rendering",
+    "model inference",
+    "repository orchestration"
+  ],
+  "adapters": {
+    "controlPlane": "AIFT-OS:mobox.runtime.inspect",
+    "worldClient": "c-848263:Mysterion Cortex",
+    "protocol": "AIFT-Genesis:aift.world.v1"
   }
 }
