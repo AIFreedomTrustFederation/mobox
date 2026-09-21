@@ -1,0 +1,45 @@
+{
+  "name": "MoBox Source Validation",
+  "on": {
+    "push": {
+      "branches": [
+        "main"
+      ]
+    },
+    "pull_request": {}
+  },
+  "permissions": {
+    "contents": "read"
+  },
+  "concurrency": {
+    "group": "mobox-validation-${{ github.workflow }}-${{ github.ref }}",
+    "cancel-in-progress": true
+  },
+  "jobs": {
+    "validate": {
+      "runs-on": "ubuntu-24.04",
+      "timeout-minutes": 10,
+      "steps": [
+        {
+          "name": "Clone triggering commit",
+          "env": {
+            "TARGET_SHA": "${{ github.sha }}"
+          },
+          "run": "set -Eeuo pipefail\ngit init\ngit remote add origin \"https://github.com/${GITHUB_REPOSITORY}.git\"\ngit fetch --depth=1 origin \"$TARGET_SHA\"\ngit checkout --detach FETCH_HEAD\n"
+        },
+        {
+          "name": "Validate shell syntax",
+          "run": "bash -n install\nsh -n .aift/commands/status.sh"
+        },
+        {
+          "name": "Validate federation JSON",
+          "run": "python3 - <<'PY'\nimport json\nfrom pathlib import Path\n\nfiles = [Path('aift.repo.json')]\nfiles.extend(Path('.aift').rglob('*.json'))\nfiles.extend(Path('federation').rglob('*.json'))\n\nfor path in sorted(files):\n    with path.open(encoding='utf-8') as source:\n        document = json.load(source)\n    if not isinstance(document, dict):\n        raise TypeError(f'{path} must contain a JSON object')\n\nprint(f'Validated {len(files)} federation JSON documents.')\nPY"
+        },
+        {
+          "name": "Confirm validation is non-mutating",
+          "run": "git diff --exit-code && test -z \"$(git status --short)\""
+        }
+      ]
+    }
+  }
+}
