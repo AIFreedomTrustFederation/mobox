@@ -20,22 +20,7 @@ Run the dependency-free source gate used by CI:
 ```sh
 bash -n install
 sh -n .aift/commands/status.sh
-python3 - <<'PY'
-import json
-from pathlib import Path
-
-files = [Path("aift.repo.json")]
-files.extend(Path(".aift").rglob("*.json"))
-files.extend(Path("federation").rglob("*.json"))
-
-for path in sorted(files):
-    with path.open(encoding="utf-8") as source:
-        document = json.load(source)
-    if not isinstance(document, dict):
-        raise TypeError(f"{path} must contain a JSON object")
-
-print(f"Validated {len(files)} federation JSON documents.")
-PY
+python3 federation/scripts/validate-index.py
 git diff --check
 test -z "$(git status --porcelain)"
 ```
