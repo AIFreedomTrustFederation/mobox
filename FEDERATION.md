@@ -40,11 +40,13 @@ Pull:
 git pull --ff-only
 ```
 
-Verify:
+Verify (run from the repository root; requires Bash, POSIX sh, and Python 3):
 
 ```bash
-git status --short
+bash -n install && sh -n .aift/commands/status.sh && python3 -B federation/scripts/validate-index.py
 ```
+
+This read-only check validates shell syntax and local federation JSON registry references. It mirrors the source checks in `.github/workflows/verify.yml`. It does **not** install MoBox, exercise Wine/Box64 or Android hardware, verify external downloads, or prove runtime compatibility. `git status --short` is only a working-tree status command, not a verification test.
 
 ## Federation Metadata
 
